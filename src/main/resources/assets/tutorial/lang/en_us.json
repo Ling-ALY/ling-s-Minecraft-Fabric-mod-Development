@@ -11,6 +11,7 @@
   "block.tutorial.deepslate_tutorial_ore":"deepslate_tutorial_ore",
   "block.tutorial.tutorial_ore":"tutorial_ore",
   "block.tutorial.tutorial_block":"tutorial_block",
+  "block.tutorial.weak_block" : "weak_block",
 
   "item.fooda.tip" : "fooda tool tip",
   "item.fooda.tip.alt" : "fooda tool tip with alt",

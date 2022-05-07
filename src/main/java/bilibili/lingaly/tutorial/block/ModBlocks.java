@@ -3,7 +3,9 @@ package bilibili.lingaly.tutorial.block;
 import bilibili.lingaly.fabricmodregister.ModRegister;
 import bilibili.lingaly.tutorial.ModItemGroups;
 import bilibili.lingaly.tutorial.Tutorial;
+import bilibili.lingaly.tutorial.block.advanced.WeakBlock;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
+import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.Block;
 import net.minecraft.block.Material;
 import net.minecraft.item.BlockItem;
@@ -51,6 +53,10 @@ public class ModBlocks {
             true,
             ModItemGroups.TUTORIAL);
 
+    public static Block WEAK_BLOCK= ModRegister.registerBlock(Tutorial.MOD_ID,
+            "weak_block",
+            new WeakBlock(FabricBlockSettings.of(Material.METAL).strength(1f)),
+            ModItemGroups.TUTORIAL);
 
     private static Block registerBlock(String name, Block block, ItemGroup itemGroup){
         registerBlockItem(name, block, itemGroup);
