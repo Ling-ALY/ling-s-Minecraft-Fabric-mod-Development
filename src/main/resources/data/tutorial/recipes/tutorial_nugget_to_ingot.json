@@ -1,0 +1,17 @@
+{
+  "type" : "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key" : {
+    "#" : {
+      "item": "tutorial:tutorial_nugget"
+    }
+  },
+  "result": {
+    "item": "tutorial:tutorial_ingot",
+    "count": 1
+  }
+}
