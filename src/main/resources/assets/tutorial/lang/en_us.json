@@ -1,0 +1,21 @@
+{
+  "item.tutorial.fooda":"食物a",
+  "item.tutorial.raw_tutorial":"raw_tutorial",
+  "item.tutorial.probe" : "probe",
+  "item.tutorial.tutorial_ingot":"tutorial_ingot",
+  "item.tutorial.tutorial_nugget":"tutorial_nugget",
+
+  "itemGroup.tutorial.tutorial":"tutorial",
+
+  "block.tutorial.raw_tutorial_block":"raw_tutorial_block",
+  "block.tutorial.deepslate_tutorial_ore":"deepslate_tutorial_ore",
+  "block.tutorial.tutorial_ore":"tutorial_ore",
+  "block.tutorial.tutorial_block":"教程块",
+
+  "item.fooda.tip" : "fooda tool tip",
+  "item.fooda.tip.alt" : "fooda tool tip with alt",
+  "item.fooda.tip.ctrl" : "fooda tool tip with ctrl",
+  "item.fooda.tip.shift" : "fooda tool tip with shift",
+
+  "item.probe.useonblock" : "%s找到%s指定方块"
+}
