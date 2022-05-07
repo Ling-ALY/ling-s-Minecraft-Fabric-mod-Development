@@ -4,10 +4,12 @@ import bilibili.lingaly.fabricmodregister.ModRegister;
 import bilibili.lingaly.tutorial.ModItemGroups;
 import bilibili.lingaly.tutorial.Tutorial;
 import bilibili.lingaly.tutorial.block.advanced.WeakBlock;
+import bilibili.lingaly.tutorial.item.ModItems;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.Block;
 import net.minecraft.block.Material;
+import net.minecraft.block.StairsBlock;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
@@ -56,6 +58,13 @@ public class ModBlocks {
     public static Block WEAK_BLOCK= ModRegister.registerBlock(Tutorial.MOD_ID,
             "weak_block",
             new WeakBlock(FabricBlockSettings.of(Material.METAL).strength(1f)),
+            ModItemGroups.TUTORIAL);
+
+    public static Block TUTORIAL_STAIR = registerBlock("tutorial_stair",
+            new StairsBlock(ModBlocks.TUTORIAL_BLOCK.getDefaultState(),
+                    FabricBlockSettings.of(Material.METAL)
+                    .strength(4f)
+                    .requiresTool()),
             ModItemGroups.TUTORIAL);
 
     private static Block registerBlock(String name, Block block, ItemGroup itemGroup){

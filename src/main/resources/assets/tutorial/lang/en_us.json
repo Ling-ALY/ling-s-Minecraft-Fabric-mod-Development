@@ -7,6 +7,7 @@
 
   "itemGroup.tutorial.tutorial":"tutorial",
 
+  "block.tutorial.tutorial_stair": "tutorial_stair",
   "block.tutorial.raw_tutorial_block":"raw_tutorial_block",
   "block.tutorial.deepslate_tutorial_ore":"deepslate_tutorial_ore",
   "block.tutorial.tutorial_ore":"tutorial_ore",
