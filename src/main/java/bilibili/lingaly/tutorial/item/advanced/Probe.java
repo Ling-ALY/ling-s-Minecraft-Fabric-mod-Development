@@ -30,32 +30,34 @@ public class Probe extends Item {
 
     @Override
     public ActionResult useOnBlock(ItemUsageContext context) {
-        BlockPos blockPosition = context.getBlockPos();
-        boolean found = false;
+        if (context.getWorld().isClient()) {
+            BlockPos blockPosition = context.getBlockPos();
+            boolean found = false;
 
-        for (int i = 0; i <= blockPosition.getY() + 64; i++){
-            Block block = context.getWorld().getBlockState(blockPosition.down(i)).getBlock();
+            for (int i = 0; i <= blockPosition.getY() + 64; i++) {
+                Block block = context.getWorld().getBlockState(blockPosition.down(i)).getBlock();
 
-            if (block == ModBlocks.TUTORIAL_ORE
-                    || block == ModBlocks.RAW_TUTORIAL_BLOCK
-                    || block == ModBlocks.DEEPSLATE_TUTORIAL_ORE){
-                found = true;
-                break;
+                if (block == ModBlocks.TUTORIAL_ORE
+                        || block == ModBlocks.RAW_TUTORIAL_BLOCK
+                        || block == ModBlocks.DEEPSLATE_TUTORIAL_ORE) {
+                    found = true;
+                    break;
+                }
+
             }
 
+            PlayerEntity playerEntity = context.getPlayer();
+            if (found) {
+                playerEntity.sendMessage(new TranslatableText("item.probe.useonblock", "", "了"), false);
+            } else {
+                playerEntity.sendMessage(new TranslatableText("item.probe.useonblock", "没有", ""), false);
+            }
+
+
+            context.getStack().damage(1,
+                    context.getPlayer(),
+                    (player) -> player.sendToolBreakStatus(player.getActiveHand()));
         }
-
-        PlayerEntity playerEntity = context.getPlayer();
-        if (found){
-            playerEntity.sendMessage(new TranslatableText("item.probe.useonblock", "", "了"), false);
-        } else {
-            playerEntity.sendMessage(new TranslatableText("item.probe.useonblock", "没有", ""), false);
-        }
-
-
-        context.getStack().damage(1,
-                context.getPlayer(),
-                (player) ->  player.sendToolBreakStatus(player.getActiveHand()));
 
         return super.useOnBlock(context);
     }
