@@ -3,6 +3,7 @@ package bilibili.lingaly.tutorial.item.advanced;
 import bilibili.lingaly.tutorial.ModTags;
 import bilibili.lingaly.tutorial.block.ModBlocks;
 import net.minecraft.block.Block;
+import net.minecraft.block.BlockState;
 import net.minecraft.client.item.TooltipContext;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
@@ -36,7 +37,7 @@ public class Probe extends Item {
             boolean found = false;
 
             for (int i = 0; i <= blockPosition.getY() + 64; i++) {
-                Block block = context.getWorld().getBlockState(blockPosition.down(i)).getBlock();
+                //Block block = context.getWorld().getBlockState(blockPosition.down(i)).getBlock();
                 /*if (block == ModBlocks.TUTORIAL_ORE
                         || block == ModBlocks.RAW_TUTORIAL_BLOCK
                         || block == ModBlocks.DEEPSLATE_TUTORIAL_ORE) {
@@ -45,7 +46,8 @@ public class Probe extends Item {
                 }
 
                  */
-                if (context.getWorld().getBlockState(blockPosition.down(i)).isIn(ModTags.Blocks.valuableBlock)){
+                BlockState blockState = context.getWorld().getBlockState(blockPosition.down(i));
+                if (blockState.isIn(ModTags.Blocks.valuableBlock)){
                     found = true;
                     break;
                 }
