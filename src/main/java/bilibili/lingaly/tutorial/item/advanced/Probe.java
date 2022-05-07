@@ -30,17 +30,13 @@ public class Probe extends Item {
         list.add(new TextComponent("探测棒"));
     }
 
-    private static int getY(BlockPos blockPos){
-        return blockPos.getY();
-    }
-
     @Override
     public InteractionResult useOn(UseOnContext useOnContext) {
         if (useOnContext.getLevel().isClientSide()){
             BlockPos blockPos = useOnContext.getClickedPos();
             boolean found = false;
 
-            for (int i = 0; i <= getY(blockPos) + 64; i++){
+            for (int i = 0; i <= blockPos.getY() + 64; i++){
                 BlockState blockState = useOnContext.getLevel().getBlockState(BlockPos.ZERO.below(i));
                 if (blockState.is(ModTags.Blocks.valuableBlock)){
                     found = true;
