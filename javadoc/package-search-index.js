@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"bilibili.lingaly.tutorial"},{"l":"bilibili.lingaly.tutorial.block"},{"l":"bilibili.lingaly.tutorial.block.advanced"},{"l":"bilibili.lingaly.tutorial.client"},{"l":"bilibili.lingaly.tutorial.item"},{"l":"bilibili.lingaly.tutorial.item.advanced"},{"l":"所有程序包","u":"allpackages-index.html"}];updateSearchResults();
