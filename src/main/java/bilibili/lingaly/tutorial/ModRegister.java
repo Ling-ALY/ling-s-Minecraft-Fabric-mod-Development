@@ -3,9 +3,9 @@ package bilibili.lingaly.tutorial;
 import bilibili.lingaly.tutorial.item.ModItems;
 import net.fabricmc.fabric.api.registry.FuelRegistry;
 
-public class ModRegistry {
+public class ModRegister {
 
-    public static void modRegistry(){
+    public static void modRegister(){
         registerFuel();
     }
 
