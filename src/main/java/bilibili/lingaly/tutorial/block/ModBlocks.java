@@ -1,10 +1,9 @@
 package bilibili.lingaly.tutorial.block;
 
 import bilibili.lingaly.fabricmodregister.ModRegister;
-import bilibili.lingaly.tutorial.ModItemGroup;
+import bilibili.lingaly.tutorial.ModItemGroups;
 import bilibili.lingaly.tutorial.Tutorial;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
-import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.Block;
 import net.minecraft.block.Material;
 import net.minecraft.item.BlockItem;
@@ -32,25 +31,25 @@ public class ModBlocks {
             Material.METAL,
             5f,
             true,
-            ModItemGroup.TUTORIAL);
+            ModItemGroups.TUTORIAL);
     public static Block TUTORIAL_ORE = ModRegister.registerBlock(Tutorial.MOD_ID,
             "tutorial_ore",
             Material.STONE,
             4f,
             true,
-            ModItemGroup.TUTORIAL);
+            ModItemGroups.TUTORIAL);
     public static Block DEEPSLATE_TUTORIAL_ORE = ModRegister.registerBlock(Tutorial.MOD_ID,
             "deepslate_tutorial_ore",
             Material.STONE,
             6f,
             true,
-            ModItemGroup.TUTORIAL);
+            ModItemGroups.TUTORIAL);
     public static Block RAW_TUTORIAL_BLOCK = ModRegister.registerBlock(Tutorial.MOD_ID,
             "raw_tutorial_block",
             Material.METAL,
             5f,
             true,
-            ModItemGroup.TUTORIAL);
+            ModItemGroups.TUTORIAL);
 
 
     private static Block registerBlock(String name, Block block, ItemGroup itemGroup){

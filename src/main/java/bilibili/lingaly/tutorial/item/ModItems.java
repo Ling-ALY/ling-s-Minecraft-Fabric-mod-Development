@@ -1,7 +1,7 @@
 package bilibili.lingaly.tutorial.item;
 
 import bilibili.lingaly.fabricmodregister.ModRegister;
-import bilibili.lingaly.tutorial.ModItemGroup;
+import bilibili.lingaly.tutorial.ModItemGroups;
 import bilibili.lingaly.tutorial.Tutorial;
 import bilibili.lingaly.tutorial.item.advanced.FoodaTip;
 import bilibili.lingaly.tutorial.item.advanced.Probe;
@@ -21,20 +21,20 @@ public class ModItems {
 
     public static Item TUTORIAL_INGOT = ModRegister.registerItem(Tutorial.MOD_ID,
             "tutorial_ingot",
-            ModItemGroup.TUTORIAL);
+            ModItemGroups.TUTORIAL);
     public static Item TUTORIAL_NUGGET = ModRegister.registerItem(Tutorial.MOD_ID,
             "tutorial_nugget",
-            ModItemGroup.TUTORIAL);
+            ModItemGroups.TUTORIAL);
     public static Item RAW_TUTORIAL = ModRegister.registerItem(Tutorial.MOD_ID,
             "raw_tutorial",
-            ModItemGroup.TUTORIAL);
+            ModItemGroups.TUTORIAL);
     public static Item FOODA = registerItem("fooda",
             new FoodaTip(new FabricItemSettings()
-                    .group(ModItemGroup.TUTORIAL)
+                    .group(ModItemGroups.TUTORIAL)
                     .food(ModFoodComponent.fooda)));
     public static Item PROBE = registerItem("probe",
             new Probe(new FabricItemSettings()
-                    .group(ModItemGroup.TUTORIAL)));
+                    .group(ModItemGroups.TUTORIAL)));
 
     public static Item registerItem(String name, Item item){
         return Registry.register(Registry.ITEM , new Identifier(Tutorial.MOD_ID , name), item);

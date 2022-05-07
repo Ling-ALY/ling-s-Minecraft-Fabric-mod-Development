@@ -4,7 +4,7 @@ import bilibili.lingaly.fabricmodregister.ModRegister;
 import bilibili.lingaly.tutorial.item.ModItems;
 import net.minecraft.item.ItemGroup;
 
-public class ModItemGroup {
+public class ModItemGroups {
 
     /*public static final ItemGroup TUTORIAL = FabricItemGroupBuilder.build(new Identifier(Tutorial.MOD_ID,
                     "tutorial"),
