@@ -1,5 +1,5 @@
 {
-  "item.tutorial.fooda":"食物a",
+  "item.tutorial.fooda":"food a",
   "item.tutorial.raw_tutorial":"raw_tutorial",
   "item.tutorial.probe" : "probe",
   "item.tutorial.tutorial_ingot":"tutorial_ingot",
@@ -10,7 +10,7 @@
   "block.tutorial.raw_tutorial_block":"raw_tutorial_block",
   "block.tutorial.deepslate_tutorial_ore":"deepslate_tutorial_ore",
   "block.tutorial.tutorial_ore":"tutorial_ore",
-  "block.tutorial.tutorial_block":"教程块",
+  "block.tutorial.tutorial_block":"tutorial_block",
 
   "item.fooda.tip" : "fooda tool tip",
   "item.fooda.tip.alt" : "fooda tool tip with alt",
