@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "tutorial:block/tutorial_slab"
+    },
+    "type=double": {
+      "model": "tutorial:block/tutorial_block"
+    },
+    "type=top": {
+      "model": "tutorial:block/tutorial_slab_top"
+    }
+  }
+}
