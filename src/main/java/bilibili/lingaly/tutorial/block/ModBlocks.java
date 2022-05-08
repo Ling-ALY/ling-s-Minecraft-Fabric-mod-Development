@@ -63,8 +63,7 @@ public class ModBlocks {
     public static Block TUTORIAL_STAIR = registerBlock("tutorial_stair",
             new StairsBlock(ModBlocks.TUTORIAL_BLOCK.getDefaultState(),
                     FabricBlockSettings.of(Material.METAL)
-                    .strength(4f)
-                    .requiresTool()),
+                    .strength(4f)),
             ModItemGroups.TUTORIAL);
 
     private static Block registerBlock(String name, Block block, ItemGroup itemGroup){
