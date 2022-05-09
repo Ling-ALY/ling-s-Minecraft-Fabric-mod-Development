@@ -2,11 +2,11 @@
   "type" : "minecraft:crafting_shapeless",
   "ingredients": [
     {
-      "item": "tutorial:tutorial_block"
+      "item": "ktmccouse:tin_ingot"
     }
   ],
   "result": {
-    "item": "tutorial:tutorial_ingot",
+    "item": "ktmccouse:tin_nugget",
     "count": 9
   }
 }

@@ -16,7 +16,6 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
 public class ModBlocks {
-
     public static Block TUTORIAL_BLOCK = registerBlock("tutorial_block",
             new Block(FabricBlockSettings.of(Material.METAL).strength(5f).requiresTool()),
             ModItemGroups.TUTORIAL);

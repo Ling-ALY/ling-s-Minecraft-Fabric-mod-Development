@@ -1,9 +1,9 @@
 {
   "replace": false,
   "values": [
-    "tutorial:deepslate_tutorial_ore",
-    "tutorial:raw_tutorial_block",
-    "tutorial:tutorial_block",
-    "tutorial:tutorial_ore"
+    "ktmccouse:deepslate_tin_ore",
+    "ktmccouse:raw_tin_block",
+    "ktmccouse:tin_block",
+    "ktmccouse:tin_ore"
   ]
 }

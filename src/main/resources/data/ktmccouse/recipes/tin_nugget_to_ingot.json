@@ -7,11 +7,11 @@
   ],
   "key" : {
     "#" : {
-      "item": "tutorial:raw_tutorial"
+      "item": "ktmccouse:tin_nugget"
     }
   },
   "result": {
-    "item": "tutorial:raw_tutorial_block",
+    "item": "ktmccouse:tin_ingot",
     "count": 1
   }
 }

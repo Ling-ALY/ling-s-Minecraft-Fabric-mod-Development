@@ -7,7 +7,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "tutorial:tutorial_block"
+          "name": "ktmccouse:raw_tin_block"
         }
       ],
       "conditions": [
