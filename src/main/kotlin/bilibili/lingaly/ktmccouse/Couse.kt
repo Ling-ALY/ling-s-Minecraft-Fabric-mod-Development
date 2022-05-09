@@ -10,5 +10,6 @@ object Couse: ModInitializer {
     override fun onInitialize() {
         ModItems.modItemRegister()
         ModBlocks.modBlockRegister()
+        ModRegister.modRegister()
     }
 }
