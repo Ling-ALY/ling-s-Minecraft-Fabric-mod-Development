@@ -1,4 +1,4 @@
-package bilibili.lingaly.ktmccouse.items
+package bilibili.lingaly.ktmccouse.items.advanced
 
 import net.minecraft.client.gui.screen.Screen
 import net.minecraft.client.item.TooltipContext
@@ -9,6 +9,7 @@ import net.minecraft.text.TranslatableText
 import net.minecraft.world.World
 
 class FoodaTip(settings: Settings?) : Item(settings) {
+
     override fun appendTooltip(stack: ItemStack, world: World?, tooltip: MutableList<Text>, context: TooltipContext) {
         if (Screen.hasAltDown()) {
             tooltip.add(TranslatableText("item.fooda.tip.alt"))
@@ -20,4 +21,5 @@ class FoodaTip(settings: Settings?) : Item(settings) {
             tooltip.add(TranslatableText("item.fooda.tip"))
         }
     }
+
 }

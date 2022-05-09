@@ -51,7 +51,8 @@ class Probe(settings: Settings?) : Item(settings) {
                                 i
                             )
                     )
-                if (blockState
+                if (
+                    blockState
                         .isIn(
                             ModTags
                                 .Blocks

@@ -2,6 +2,7 @@ package bilibili.lingaly.ktmccouse.items
 
 import bilibili.lingaly.ktmccouse.Couse
 import bilibili.lingaly.ktmccouse.ModItemGroups
+import bilibili.lingaly.ktmccouse.items.advanced.FoodaTip
 import bilibili.lingaly.ktmccouse.items.advanced.Probe
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings
 import net.minecraft.item.Item
