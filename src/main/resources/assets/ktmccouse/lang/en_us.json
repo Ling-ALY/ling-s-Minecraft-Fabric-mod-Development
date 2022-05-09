@@ -1,0 +1,24 @@
+{
+  "item.ktmccouse.fooda":"food a",
+  "item.ktmccouse.raw_ktmccouse":"raw_ktmccouse",
+  "item.ktmccouse.probe" : "probe",
+  "item.ktmccouse.tin_ingot":"tin_ingot",
+  "item.ktmccouse.tin_nugget":"tin_nugget",
+
+  "itemGroup.ktmccouse.tin":"tin",
+
+  "block.ktmccouse.tin_stair": "tin_stair",
+  "block.ktmccouse.tin_slab" : "tin_slab",
+  "block.ktmccouse.raw_tin_block":"raw_tin_block",
+  "block.ktmccouse.deepslate_tin_ore":"deepslate_tin_ore",
+  "block.ktmccouse.tin_ore":"tin_ore",
+  "block.ktmccouse.tin_block":"tin_block",
+  "block.ktmccouse.weak_block" : "weak_block",
+
+  "item.fooda.tip" : "fooda tool tip",
+  "item.fooda.tip.alt" : "fooda tool tip with alt",
+  "item.fooda.tip.ctrl" : "fooda tool tip with ctrl",
+  "item.fooda.tip.shift" : "fooda tool tip with shift",
+
+  "item.probe.useonblock" : "%s找到%s指定方块"
+}
