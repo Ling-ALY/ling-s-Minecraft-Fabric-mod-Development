@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "ktmccouse:block/tin_slab"
+    },
+    "type=double": {
+      "model": "ktmccouse:block/tin_block"
+    },
+    "type=top": {
+      "model": "ktmccouse:block/tin_slab_top"
+    }
+  }
+}

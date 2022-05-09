@@ -1,0 +1,7 @@
+{
+  "variants" : {
+    "" : {
+      "model" : "ktmccouse:block/raw_tin_block"
+    }
+  }
+}

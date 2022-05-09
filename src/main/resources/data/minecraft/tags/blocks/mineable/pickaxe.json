@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "ktmccouse:deepslate_tin_ore",
+    "ktmccouse:raw_tin_block",
+    "ktmccouse:tin_block",
+    "ktmccouse:tin_ore"
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "id": "ktmccouse",
+  "version": "${version}",
+  "name": "Couse",
+  "description": "Mod Description",
+  "authors": [
+    "Author"
+  ],
+  "contact": {
+    "homepage": "https://gitee.com/LING-ALY/ling-s_fabric_mod_development_tutorial"
+  },
+  "license": "MIT",
+  "icon": "assets/ktmccouse/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      {
+        "adapter": "kotlin",
+        "value": "bilibili.lingaly.ktmccouse.Couse"
+      }
+    ]
+  },
+  "mixins": [
+    "ktmccouse.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.14.4",
+    "fabric": "*",
+    "fabric-language-kotlin": ">=1.7.4+kotlin.1.6.21",
+    "minecraft": "1.18.2",
+    "java": ">=17"
+  }
+}
