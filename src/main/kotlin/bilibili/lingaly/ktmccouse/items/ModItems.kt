@@ -6,48 +6,43 @@ import bilibili.lingaly.ktmccouse.items.advanced.FoodaTip
 import bilibili.lingaly.ktmccouse.items.advanced.Probe
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings
 import net.minecraft.item.Item
-import net.minecraft.util.Identifier
-import net.minecraft.util.registry.Registry
+import bilibili.lingaly.easyfabricregisterlib.EFRLModRegister
 
 object ModItems {
 
-    val TIN_INGOT: Item = registerItem(
+    private const val MOD_ID = Couse
+        .MOD_ID
+
+    val TIN_INGOT: Item = EFRLModRegister
+        .registerItem(
+        MOD_ID,
         "tin_ingot",
-        Item(
-            FabricItemSettings()
-                .group(
-                    ModItemGroups
-                        .TIN
-                )
-        )
+        ModItemGroups
+            .TIN
     )
 
     @Suppress("unused")
-    val TIN_NUGGET: Item = registerItem(
+    val TIN_NUGGET: Item = EFRLModRegister
+        .registerItem(
+        MOD_ID,
         "tin_nugget",
-        Item(
-            FabricItemSettings()
-                .group(
-                    ModItemGroups
-                        .TIN
-                )
-        )
+        ModItemGroups
+            .TIN
     )
 
     @Suppress("unused")
-    val RAW_TIN: Item = registerItem(
+    val RAW_TIN: Item = EFRLModRegister
+        .registerItem(
+        MOD_ID,
         "raw_tin",
-        Item(
-            FabricItemSettings()
-                .group(
-                    ModItemGroups
-                        .TIN
-                )
-        )
+        ModItemGroups
+            .TIN
     )
 
     @Suppress("unused")
-    val FOODA: Item = registerItem(
+    val FOODA: Item = EFRLModRegister
+        .registerItem(
+        MOD_ID,
         "fooda",
         FoodaTip(
             FabricItemSettings()
@@ -63,32 +58,18 @@ object ModItems {
     )
 
     @Suppress("unused")
-    val PROBE: Item = registerItem(
-        "probe",
-        Probe(
-            FabricItemSettings()
-                .group(
-                    ModItemGroups
-                        .TIN
-                )
-        )
-    )
-
-    private fun registerItem(
-        name: String,
-        item: Item
-    ): Item {
-        return Registry
-            .register(
-                Registry
-                    .ITEM,
-                Identifier(
-                    Couse.MOD_ID,
-                    name
-                ),
-                item
+    val PROBE: Item = EFRLModRegister
+        .registerItem(
+            MOD_ID,
+            "probe",
+            Probe(
+                FabricItemSettings()
+                    .group(
+                        ModItemGroups
+                            .TIN
+                    )
             )
-    }
+        )
 
     fun modItemRegister() {}
 

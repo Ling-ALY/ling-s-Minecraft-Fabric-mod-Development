@@ -1,20 +1,16 @@
 package bilibili.lingaly.ktmccouse
 
+import bilibili.lingaly.easyfabricregisterlib.EFRLModRegister
 import bilibili.lingaly.ktmccouse.items.ModItems
-import net.fabricmc.fabric.api.client.itemgroup.FabricItemGroupBuilder
-import net.minecraft.item.ItemGroup
-import net.minecraft.item.ItemStack
-import net.minecraft.util.Identifier
-
 object ModItemGroups {
 
-    val TIN: ItemGroup = FabricItemGroupBuilder.build(
-        Identifier(
-            Couse.MOD_ID,
-            "tin"
+    val TIN = EFRLModRegister
+        .registerItemGroup(
+            Couse
+                .MOD_ID,
+            "tin",
+            ModItems
+                .TIN_INGOT
         )
-    ) {
-        ItemStack(ModItems.TIN_INGOT)
-    }
 
 }

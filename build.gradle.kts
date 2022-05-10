@@ -23,6 +23,7 @@ dependencies {
     modImplementation("net.fabricmc.fabric-api", "fabric-api", fabricVersion)
     val fabricKotlinVersion: String by project
     modImplementation("net.fabricmc", "fabric-language-kotlin", fabricKotlinVersion)
+    modImplementation(fileTree(mapOf("dir" to "libs", "include" to listOf("*.jar"))))
 }
 tasks {
     val javaVersion = JavaVersion.VERSION_17

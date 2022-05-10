@@ -1,7 +1,7 @@
 package bilibili.lingaly.ktmccouse
 
+import bilibili.lingaly.easyfabricregisterlib.EFRLModRegister
 import bilibili.lingaly.ktmccouse.items.ModItems
-import net.fabricmc.fabric.api.registry.FuelRegistry
 
 object ModRegister {
 
@@ -10,9 +10,7 @@ object ModRegister {
     }
 
     private fun registerFuel() {
-        val fuelRegistry = FuelRegistry.INSTANCE
-
-        fuelRegistry.add(
+        EFRLModRegister.registerFuel(
             ModItems
                 .PROBE,
             200
